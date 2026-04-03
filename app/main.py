@@ -1,11 +1,10 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from typing import List
-from app.database import get_db, Base, engine
+from app.database import get_db
 from app.models import Book
 
-# Создаём таблицы при старте
-Base.metadata.create_all(bind=engine)
+
 
 app = FastAPI(title="Каталог личной библиотеки")
 
