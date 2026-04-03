@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from typing import List
-from app.database import get_db, engine
+from app.database import get_db, 
 from app.models import Book
 
-# Создаём таблицы при стартеBase.metadata.create_all(bind=engine)
+
 
 app = FastAPI(title="Каталог личной библиотеки")
 
