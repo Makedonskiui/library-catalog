@@ -4,8 +4,7 @@ from typing import List
 from app.database import get_db, Base, engine
 from app.models import Book
 
-# Создаём таблицы при старте
-Base.metadata.create_all(bind=engine)
+# Создаём таблицы при стартеBase.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Каталог личной библиотеки")
 
